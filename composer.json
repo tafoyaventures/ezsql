@@ -1,5 +1,5 @@
 {
-    "name": "ezsql/ezsql",
+    "name": "tafoyaventures/ezsqlTafoya",
     "description": "Advance database access library. Make interacting with a database ridiculously easy. An universal interchangeable CRUD system.",
     "keywords": [
         "crud",
@@ -33,10 +33,14 @@
         {
             "name": "l. stubbs",
             "email": "lstubbs@techno.express"
+        },
+        {
+            "name": "Brian Tafoya",
+            "email": "btafoya@briantafoya.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/ezSQL/ezSQL/issues"
+        "issues": "https://github.com/tafoyaventures/ezsqlTafoya"
     },
     "require": {
         "php": ">7.1",
