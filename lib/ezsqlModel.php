@@ -569,7 +569,7 @@ class ezsqlModel extends ezQuery implements ezsqlModelInterface
 	public function get_results(string $query = null, $output = \OBJECT, bool $use_prepare = false)
 	{
 		// Log how the function was called
-		$this->log_query("\$db->get_results(\"$query\", $output, $use_prepare)");
+		//$this->log_query("\$db->get_results(\"$query\", $output, $use_prepare)");
 
 		// If there is a query then perform it if not then use cached results..
 		if ($query) {
