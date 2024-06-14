@@ -1,5 +1,5 @@
 {
-    "name": "tafoyaventures/ezsqlTafoya",
+    "name": "tafoyaventures/ezsql-tafoya",
     "description": "Advance database access library. Make interacting with a database ridiculously easy. An universal interchangeable CRUD system.",
     "keywords": [
         "crud",
