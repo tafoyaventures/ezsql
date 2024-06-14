@@ -23,6 +23,11 @@ if (!\function_exists('ezFunctions')) {
         return Db::get('global');
     }
 
+    function getLastRecordedError(): ?string
+    {
+        return Db::getLastRecordedError();
+    }
+
     /**
      * Clear/unset the global database class instance.
      */

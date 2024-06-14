@@ -17,6 +17,7 @@ final class Db
      * @var ezQueryInterface[]
      */
     protected static $storage;
+    private static $lastError;
 
     /**
      * @param string $key
@@ -62,5 +63,10 @@ final class Db
     public static function reset(): void
     {
         self::$storage = null;
+    }
+
+    public static function getLastRecordedError()
+    {
+        return self::$lastError;
     }
 }

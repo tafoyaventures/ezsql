@@ -426,6 +426,19 @@ class ezsqlModel extends ezQuery implements ezsqlModelInterface
 		return array($host, $port);
 	}
 
+    // Custom logging function
+    function log_error($message) {
+        $log_file = '/path/to/your/log/file.log'; // Ensure this path is writable
+        $current_time = date('Y-m-d H:i:s');
+        $formatted_message = "[{$current_time}] ERROR: {$message}\n";
+        error_log($formatted_message, 3, $log_file);
+    }
+
+    function getLastRecordedError(): ?string
+    {
+        return $this->lastError;
+    }
+
 	public function register_error(string $err_str, bool $displayError = true)
 	{
 		// Keep track of last error
