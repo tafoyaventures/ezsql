@@ -456,7 +456,7 @@ class ezsqlModel extends ezQuery implements ezsqlModelInterface
 		);
 
 		if ($this->showErrors && $displayError)
-			\trigger_error(\htmlentities($err_str), \E_USER_WARNING);
+			\trigger_error(\htmlentities($err_str . " - SQL: " . $this->lastQuery), \E_USER_WARNING);
 
 		return false;
 	}
