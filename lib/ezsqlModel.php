@@ -436,7 +436,12 @@ class ezsqlModel extends ezQuery implements ezsqlModelInterface
 
     function getLastRecordedError(): ?string
     {
-        return "SQL Error: " . $this->lastError . " - SQL: " . $this->lastQuery;
+        if($this->capturedErrors) {
+            $data = $this->capturedErrors[array_key_last($this->capturedErrors)];
+            return "SQL Error: " . $data->error_str . " - SQL: " . $data->query;
+        }
+
+        return false;
     }
 
 	public function register_error(string $err_str, bool $displayError = true)

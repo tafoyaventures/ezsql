@@ -43,7 +43,7 @@
         "issues": "https://github.com/tafoyaventures/ezsqlTafoya"
     },
     "require": {
-        "php": ">7.1",
+        "php": ">7.4",
         "psr/container": "^1.0"
     },
     "provide": {
